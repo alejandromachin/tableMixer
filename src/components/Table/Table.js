@@ -1,4 +1,4 @@
-const lateralTable = (students) => {
+const Table = (students) => {
   return (
     <>
       <div>
@@ -11,4 +11,4 @@ const lateralTable = (students) => {
     </>
   );
 };
-export default lateralTable;
+export default Table;
