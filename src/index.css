@@ -1,12 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("/public/images/carpet.jpeg");
 }
 
 .hall {
   display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.tables {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+.isdi-logo {
+  width: 200px;
 }
 
 .table {
@@ -16,6 +30,7 @@ body {
   justify-content: space-between;
   height: 550px;
   width: 300px;
+  padding: 10px;
   border: 1px solid #000;
   background-color: azure;
 }
@@ -32,6 +47,7 @@ body {
   width: 90px;
   height: 90px;
   border-radius: 50px;
+  border: 1px solid #000;
 }
 
 .profes {

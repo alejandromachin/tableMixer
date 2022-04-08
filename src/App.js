@@ -17,18 +17,23 @@ function App() {
   };
 
   return (
-    <>
-      <div className="hall">
+    <div className="hall">
+      <div className="tables">
         <Table students={studentsTable1} />
         <Table students={studentsTable2} />
         <Table students={studentsTable3} />
       </div>
       <div className="profes">
         <div className="buttonTable">
+          <img
+            className="isdi-logo"
+            src="/images/isdi-logo.webp"
+            alt="ISDI CODERS LOGO"
+          />
           <Button actionOnClick={shuffle} text={"RANDOM"}></Button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
