@@ -1,0 +1,62 @@
+body {
+  background-image: url("/public/images/carpet.jpeg");
+}
+
+.hall {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  height: 550px;
+  width: 300px;
+  border: 1px solid #000;
+  background-color: azure;
+}
+.student {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 120px;
+}
+
+.student-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+
+.profes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.buttonTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 500px;
+  border: 1px solid #000;
+  background-color: azure;
+}
+
+button {
+  font-size: 30px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}

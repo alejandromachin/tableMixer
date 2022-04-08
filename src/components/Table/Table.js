@@ -1,12 +1,16 @@
 const Table = ({ students }) => {
   return (
     <>
-      <div>
-        <ul>
-          {students.map((student) => (
-            <li key={student.name}>{student}</li>
-          ))}
-        </ul>
+      <div className="table">
+        {students.map((student) => (
+          <div key={student} className="student">
+            <img
+              className="student-image"
+              src={`images/students_photos/${student}.webp`}
+              alt="student"
+            />
+          </div>
+        ))}
       </div>
     </>
   );

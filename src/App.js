@@ -11,19 +11,23 @@ function App() {
 
   const shuffle = () => {
     const shuffledStudents = shuffleArray(students);
-
-    setStudentsTable1(shuffledStudents.slice(0, 8));
+    setStudentsTable1(shuffledStudents.slice(0, 9));
     setStudentsTable2(shuffledStudents.slice(9, 17));
-    setStudentsTable3(shuffledStudents.slice(18, 27));
+    setStudentsTable3(shuffledStudents.slice(17, 31));
   };
 
   return (
     <>
-      <Table students={studentsTable1} />
-      <Table students={studentsTable2} />
-      <Table students={studentsTable3} />
-
-      <Button actionOnClick={shuffle} text={"RANDOM"}></Button>
+      <div className="hall">
+        <Table students={studentsTable1} />
+        <Table students={studentsTable2} />
+        <Table students={studentsTable3} />
+      </div>
+      <div className="profes">
+        <div className="buttonTable">
+          <Button actionOnClick={shuffle} text={"RANDOM"}></Button>
+        </div>
+      </div>
     </>
   );
 }

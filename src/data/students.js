@@ -19,6 +19,7 @@ export const students = [
   "DANIEL",
   "IGNASI",
   "BORIS",
+  "LUC",
   "VICTOR GARCIA",
   "CRISTIAN",
   "MARIAN",
