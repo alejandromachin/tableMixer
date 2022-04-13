@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "./components/Button/Button";
 import Table from "./components/Table/Table";
 import { students } from "./data/students";
+import studentsWithLargerImage from "./data/studentsWithLargerImage";
 import shuffleArray from "./utils/studentsMixer";
 
 function App() {
@@ -19,9 +20,21 @@ function App() {
   return (
     <div className="hall">
       <div className="tables">
-        <Table students={studentsTable1} />
-        <Table students={studentsTable2} />
-        <Table students={studentsTable3} />
+        <Table
+          students={studentsTable1}
+          position="sideTable"
+          studentsWithLargerImage={studentsWithLargerImage}
+        />
+        <Table
+          students={studentsTable2}
+          position="centerTable"
+          studentsWithLargerImage={studentsWithLargerImage}
+        />
+        <Table
+          students={studentsTable3}
+          position="sideTable"
+          studentsWithLargerImage={studentsWithLargerImage}
+        />
       </div>
       <div className="profes">
         <div className="buttonTable">
