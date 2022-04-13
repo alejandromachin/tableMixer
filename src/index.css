@@ -30,24 +30,65 @@ body {
   justify-content: space-between;
   height: 550px;
   width: 300px;
-  padding: 10px;
+  padding: 10px 30px;
   border: 1px solid #000;
   background-color: azure;
+  position: relative;
 }
+
+.centerTable::before {
+  position: absolute;
+  content: "";
+  border: 1px solid black;
+  height: 100%;
+  top: 0;
+  left: 150px;
+}
+
+.centerTable,
+.sideTable {
+  gap: 20px;
+}
+
+.sideTable::before {
+  position: absolute;
+  content: "";
+  border: 1px solid black;
+  height: 79%;
+  top: 0;
+  left: 150px;
+}
+
+.sideTable::after {
+  position: absolute;
+  content: "";
+  border: 1px solid black;
+  width: 100%;
+  bottom: 111px;
+  left: 0;
+}
+
 .student {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 120px;
-}
 
-.student-image {
+  overflow: hidden;
   width: 90px;
   height: 90px;
   border-radius: 50px;
   border: 1px solid #000;
+}
+
+.student-image {
+  height: 90px;
+  width: auto;
+}
+
+.tooLargeToFit {
+  width: 90px;
+  height: auto;
 }
 
 .profes {
