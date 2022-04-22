@@ -15,6 +15,13 @@ const Table = ({ students, position, studentsWithLargerImage, emanuele }) => {
             />
           </div>
         ))}
+        {emanuele && (
+          <img
+            className="student-image"
+            src={`images/students_photos/${emanuele}.webp`}
+            alt="student"
+          />
+        )}
       </div>
     </>
   );
