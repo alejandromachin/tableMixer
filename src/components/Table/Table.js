@@ -1,7 +1,14 @@
-const Table = ({ students, position, studentsWithLargerImage }) => {
+const Table = ({ students, position, studentsWithLargerImage, emanuele }) => {
   return (
     <>
       <div className={`table ${position}`}>
+        {emanuele && (
+          <img
+            className="student"
+            src={`images/students_photos/${emanuele}.webp`}
+            alt="student"
+          />
+        )}
         {students.map((student) => (
           <div key={student} className="student">
             <img
