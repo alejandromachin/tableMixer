@@ -17,6 +17,8 @@ function App() {
     setStudentsTable3(shuffledStudents.slice(17, 31));
   };
 
+  const emanuele = "EMANUELE";
+
   return (
     <div className="hall">
       <div className="tables">
@@ -24,6 +26,7 @@ function App() {
           students={studentsTable1}
           position="sideTable"
           studentsWithLargerImage={studentsWithLargerImage}
+          emanuele={emanuele}
         />
         <Table
           students={studentsTable2}

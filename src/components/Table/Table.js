@@ -1,4 +1,4 @@
-const Table = ({ students, position, studentsWithLargerImage }) => {
+const Table = ({ students, position, studentsWithLargerImage, emanuele }) => {
   return (
     <>
       <div className={`table ${position}`}>
