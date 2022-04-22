@@ -2,6 +2,13 @@ const Table = ({ students, position, studentsWithLargerImage, emanuele }) => {
   return (
     <>
       <div className={`table ${position}`}>
+        {emanuele && (
+          <img
+            className="student"
+            src={`images/students_photos/${emanuele}.webp`}
+            alt="student"
+          />
+        )}
         {students.map((student) => (
           <div key={student} className="student">
             <img
@@ -15,13 +22,6 @@ const Table = ({ students, position, studentsWithLargerImage, emanuele }) => {
             />
           </div>
         ))}
-        {emanuele && (
-          <img
-            className="student-image"
-            src={`images/students_photos/${emanuele}.webp`}
-            alt="student"
-          />
-        )}
       </div>
     </>
   );

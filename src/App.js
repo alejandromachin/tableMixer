@@ -14,7 +14,7 @@ function App() {
     const shuffledStudents = shuffleArray(students);
     setStudentsTable1(shuffledStudents.slice(0, 9));
     setStudentsTable2(shuffledStudents.slice(9, 17));
-    setStudentsTable3(shuffledStudents.slice(17, 31));
+    setStudentsTable3(shuffledStudents.slice(17, 30));
   };
 
   const emanuele = "EMANUELE";
@@ -26,7 +26,6 @@ function App() {
           students={studentsTable1}
           position="sideTable"
           studentsWithLargerImage={studentsWithLargerImage}
-          emanuele={emanuele}
         />
         <Table
           students={studentsTable2}
@@ -37,6 +36,7 @@ function App() {
           students={studentsTable3}
           position="sideTable"
           studentsWithLargerImage={studentsWithLargerImage}
+          emanuele={emanuele}
         />
       </div>
       <div className="profes">
